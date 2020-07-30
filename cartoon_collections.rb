@@ -1,23 +1,25 @@
+require "pry"
 def roll_call_dwarves(names)
   empty = []
 
-  names.each_with_index do |index, names|
+  names.each_with_index do |names, index|
     empty << "#{index + 1} #{names}"
   end
-  empty
+  puts empty
 end
 
-def summon_captain_planet# code an argument here
-  # Your code here
+def summon_captain_planet(words)
+  words.map do |word|
+  word.capitalize + "!"
+  end
 end
-
+#
 def long_planeteer_calls(assorted_words)
-  assorted_words.any? { |word| }
-   word.length.any? > 4
- end
+   assorted_words.any? { |x| }
+   assorted_words.length.any? > 4
 end
-
-def find_the_cheese(array)
-  cheese_types = ["cheddar", "gouda", "camembert"]
-  cheese_types.find {|cheddar|}
-end
+#
+# def find_the_cheese(array)
+#   cheese_types = ["cheddar", "gouda", "camembert"]
+#   cheese_types.find {|cheddar|}
+# end
