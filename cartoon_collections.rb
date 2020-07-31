@@ -15,11 +15,10 @@ def summon_captain_planet(words)
 end
 #
 def long_planeteer_calls(assorted_words)
-   assorted_words.any? { |x| }
-   assorted_words.length.any? > 4
+   assorted_words.any? { |x| x.length > 4 }
 end
 #
-# def find_the_cheese(array)
-#   cheese_types = ["cheddar", "gouda", "camembert"]
-#   cheese_types.find {|cheddar|}
-# end
+def find_the_cheese(array)
+  cheese_types = ["cheddar", "gouda", "camembert"]
+  array.find { |name| cheese_types.include? (name) }
+end
