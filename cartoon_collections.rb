@@ -1,3 +1,4 @@
+require "pry"
 def roll_call_dwarves(names)
   names.each_with_index do |name, index|
   puts "#{index+1}. #{name}"
@@ -17,12 +18,12 @@ def long_planeteer_calls(words)
 end
 
 def find_the_cheese(ingredients)
-  # the array below is here to help
-    new_array = []
     cheese_types = ["cheddar", "gouda", "camembert"]
-     if ingredients.include?(cheese_types)
-     new_array << ingredients.find do |cheese|
+    cheese_types.each do |cheese|
+      #binding.pry
+     if ingredients.include?(cheese)
+     return cheese
     end
-     return new_array
   end
+  nil
 end
